@@ -6,7 +6,6 @@ const contentPages = document.querySelectorAll('.page-content');
 
 const mainHeader = document.getElementById('main-header');
 
-
 navLinks.forEach(link => {
     link.addEventListener('click', function(event) {
        
