@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>UniPortal</h2>
+        <a href="#" class="nav-link active" data-page="dashboard">Dashboard</a>
+        <a href="#" class="nav-link" data-page="courses">My Courses</a>
+        <a href="#" class="nav-link" data-page="grades">Grades</a>
+        <a href="#" class="nav-link" data-page="profile">Profile</a>
+        <a href="#" class="nav-link" data-page="logout">Logout</a>
+    </div>
+
+    <div class="main-content">
+        <h1 id="main-header">Dashboard</h1>
+
+        <div id="dashboard-content" class="page-content">
+            <div class="card">
+                <h3>Upcoming Assignments</h3>
+                <p><strong>CMPT 300:</strong> Final Project - Due Oct 24, 2025</p>
+                <p><strong>MATH 251:</strong> Homework 5 - Due Oct 28, 2025</p>
+            </div>
+            <div class="card">
+                <h3>Announcements</h3>
+                <p>Mid-term exam schedule has been updated.</p>
+            </div>
+        </div>
+
+        <div id="courses-content" class="page-content hidden">
+            <div class="card">
+                <h3>My Courses</h3>
+                <table>
+                    <tr>
+                        <th>Code</th>
+                        <th>Name</th>
+                        <th>Instructor</th>
+                    </tr>
+                    <tr>
+                        <td>CMPT 300</td>
+                        <td>Operating Systems</td>
+                        <td>Dr. Emily White</td>
+                    </tr>
+                    <tr>
+                        <td>MATH 251</td>
+                        <td>Calculus III</td>
+                        <td>Prof. Dinesh</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <div id="grades-content" class="page-content hidden">
+            <div class="card">
+                <h3>Grades</h3>
+                <p>Your grade report will be displayed here.</p>
+            </div>
+        </div>
+
+        <div id="profile-content" class="page-content hidden">
+            <div class="card">
+                <h3>Student Profile</h3>
+                <p><strong>Name:</strong> Satwik</p>
+                <p><strong>ID:</strong> 2400032</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
